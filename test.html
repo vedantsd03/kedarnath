@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7N/8D Do Dham Yatra | Legend India Holidays</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f17;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .font-spiritual {
+            font-family: 'Cinzel', serif;
+        }
+        /* Custom dynamic glow track */
+        .glow-orange:hover {
+            box-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #f97316 0%, #d97706 50%, #0b0f17 100%);
+        }
+        .glassmism {
+            background: rgba(18, 24, 38, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glassmism px-6 py-4 flex justify-between items-center transition-all duration-300 border-b border-white/5">
+        <div class="flex items-center space-x-2">
+            <span class="font-spiritual text-2xl font-black tracking-widest bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">HOLIDAYS</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+            <a href="#overview" class="hover:text-orange-500 transition-colors">Overview</a>
+            <a href="#itinerary" class="hover:text-orange-500 transition-colors">Itinerary</a>
+            <a href="#hotels" class="hover:text-orange-500 transition-colors">Stays</a>
+            <a href="#inclusions" class="hover:text-orange-500 transition-colors">Inclusions</a>
+            <a href="#payment" class="hover:text-orange-500 transition-colors">Payment</a>
+        </div>
+        <div>
+            <a href="#payment" class="bg-gradient-to-r from-orange-600 to-amber-500 text-white font-bold px-5 py-2.5 rounded-full text-xs uppercase tracking-wider shadow-lg hover:scale-105 transition-transform inline-block">Book Tour</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center justify-center bg-cover bg-center overflow-hidden" style="background-image: linear-gradient(rgba(11, 15, 23, 0.45), rgba(11, 15, 23, 0.95)), url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1920');">
+        <!-- Overlay graphic element -->
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#0b0f17] to-transparent z-10"></div>
+        
+        <div class="text-center px-4 max-w-5xl z-20 space-y-6 mt-16">
+            <div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 text-orange-400 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase">
+                <i class="fa-solid fa-om animate-spin-slow"></i> Divine Himalayas Spiritual Journey
+            </div>
+            <h1 class="font-spiritual text-5xl md:text-8xl font-black tracking-tight leading-tight text-white hero-title">
+                Do Dham Yatra <br><span class="bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-300 bg-clip-text text-transparent">with Tungnath</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto font-light hero-subtitle">
+                An ultra-premium 7 Night / 8 Day sacred escape customized meticulously for <span class="text-white font-semibold">Mr. Vedant & Guests</span>.
+            </p>
+            
+            <!-- Dynamic Quote / Date Badge -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto pt-8 border-t border-white/10 hero-badges">
+                <div class="glassmism p-3 rounded-xl">
+                    <p class="text-xs text-gray-400 uppercase tracking-widest">Departure Date</p>
+                    <p class="text-base font-bold text-amber-400 mt-1">5th June 2026</p>
+                </div>
+                <div class="glassmism p-3 rounded-xl">
+                    <p class="text-xs text-gray-400 uppercase tracking-widest">Total Squad Size</p>
+                    <p class="text-base font-bold text-amber-400 mt-1">08 Adults</p>
+                </div>
+                <div class="glassmism p-3 rounded-xl">
+                    <p class="text-xs text-gray-400 uppercase tracking-widest">Configuration</p>
+                    <p class="text-base font-bold text-amber-400 mt-1">02 Quad Stays</p>
+                </div>
+                <div class="glassmism p-3 rounded-xl">
+                    <p class="text-xs text-gray-400 uppercase tracking-widest">Luxury Vehicle</p>
+                    <p class="text-base font-bold text-amber-400 mt-1">12S Tempo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Overview & Countdown Banner -->
+    <section id="overview" class="py-24 px-6 max-w-7xl mx-auto relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 fade-in-left">
+                <h2 class="font-spiritual text-4xl font-bold text-white tracking-wide">
+                    The Ultimate Spiritual Ascent
+                </h2>
+                <div class="w-20 h-1 bg-orange-500 rounded-full"></div>
+                <p class="text-gray-400 leading-relaxed text-justify">
+                    The Kedarnath &amp; Tungnath Trek is a profound journey into the spiritual heart of the Garhwal Himalayas. This trek is a sacred pilgrimage to some of the holiest shrines dedicated to Lord Shiva, including Tungnath—the highest Shiva temple in the world. Traverse through breathtaking alpine meadows, mist-shrouded peaks, and deep valleys saturated with divine peace.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-3 gap-6 pt-4">
+                    <div class="border-l-2 border-orange-500 pl-4">
+                        <span class="text-3xl font-bold font-spiritual text-white block counter-val" data-target="3680">0</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider">Max Altitude (Mts)</span>
+                    </div>
+                    <div class="border-l-2 border-orange-500 pl-4">
+                        <span class="text-3xl font-bold font-spiritual text-white block counter-val" data-target="46">0</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider">Trek Distance (Kms)</span>
+                    </div>
+                    <div class="border-l-2 border-orange-500 pl-4">
+                        <span class="text-3xl font-bold font-spiritual text-white block counter-val" data-target="8">0</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider">Days of Wonder</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Package Pricing Badge Box -->
+            <div class="lg:col-span-5 fade-in-right">
+                <div class="bg-gradient-to-br from-amber-600 to-orange-700 rounded-3xl p-8 relative overflow-hidden shadow-2xl scale-up-hover">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-black text-9xl">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                    <span class="bg-white/20 text-white font-semibold text-xs uppercase px-3 py-1 rounded-full tracking-widest inline-block mb-4">Limited Availability Deal</span>
+                    <h3 class="text-white text-xl font-bold">Exclusive Fixed Group Cost</h3>
+                    <div class="my-6">
+                        <span class="text-5xl font-black text-white font-spiritual">₹18,000</span>
+                        <span class="text-white/80 text-sm"> / Per Person All Inclusive</span>
+                    </div>
+                    <div class="space-y-3 text-white/90 text-sm mb-6">
+                        <p><i class="fa-solid fa-check-circle mr-2 text-yellow-300"></i> No Hidden Taxes & Surcharges</p>
+                        <p><i class="fa-solid fa-check-circle mr-2 text-yellow-300"></i> 3★ Deluxe Verified Stays</p>
+                        <p><i class="fa-solid fa-check-circle mr-2 text-yellow-300"></i> MAPI Meals (Breakfast + Dinner)</p>
+                    </div>
+                    <div class="bg-black/20 backdrop-blur-md rounded-xl p-4 border border-white/10 text-center animate-pulse">
+                        <p class="text-xs uppercase tracking-wider font-bold text-yellow-300"><i class="fa-solid fa-fire mr-1"></i> Peak Season Warning</p>
+                        <p class="text-white text-xs mt-1">Rates scale higher within 30 days due to massive Himalayan surge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Itinerary -->
+    <section id="itinerary" class="py-24 bg-[#070a10] border-y border-white/5 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 space-y-3">
+                <span class="text-orange-500 font-bold uppercase tracking-widest text-xs">Day-By-Day Roadmap</span>
+                <h2 class="font-spiritual text-4xl md:text-5xl font-bold text-white">The Chronicled Path</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Vertical Timeline Component -->
+            <div class="relative">
+                <!-- Timeline Central Line -->
+                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 timeline-line transform -translate-x-1/2"></div>
+
+                <!-- Day 1 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="md:text-right md:pr-12 pt-1 order-2 md:order-1">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-orange-500/20 text-orange-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Dinner Included</span>
+                            <h3 class="text-xl font-bold text-white">Arrival Delhi - Haridwar Sightseeing</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-road mr-1"></i> 223 Kms | 4 - 4.5 Hrs Drive</p>
+                            <p class="text-sm text-gray-400">Pickup from Delhi railway station. Drive straight to Haridwar. Experience the enchanting Har Ki Pauri Ganga Aarti, Shri Mata Mansa Devi, and Chandi Devi shrines.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">1</div>
+                    <div class="hidden md:block md:pl-12 pt-6 order-3">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 01</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">STARTING THE PILGRIMAGE</span>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="hidden md:block md:text-right md:pr-12 pt-6 order-2 md:order-1">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 02</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">VALLEY ENTRANCE</span>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">2</div>
+                    <div class="md:pl-12 pt-1 order-3">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-orange-500/20 text-orange-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Breakfast &amp; Dinner</span>
+                            <h3 class="text-xl font-bold text-white">Haridwar to Guptkashi</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-road mr-1"></i> 203 Kms | 7 - 8 Hrs Drive</p>
+                            <p class="text-sm text-gray-400">Drive alongside the beautiful Mandakini River originating from Kedarnath. Witness spectacular confluences en route to Guptkashi. Check-in & overnight stay.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="md:text-right md:pr-12 pt-1 order-2 md:order-1">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-amber-500/20 text-amber-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Breakfast (EP at Camp)</span>
+                            <h3 class="text-xl font-bold text-white">Guptkashi - Sonprayag - Kedarnath</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-person-hiking mr-1"></i> 23 Km Mountain Track One-Way</p>
+                            <p class="text-sm text-gray-400">Early morning transit to Sonprayag/Gaurikund. Begin the magnificent 23 km trek to Kedarnath alongside massive waves of chanting pilgrims. Check-in at GMVN Lodge.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">3</div>
+                    <div class="hidden md:block md:pl-12 pt-6 order-3">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 03</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">THE DIVINE SACRED HEIGHT</span>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="hidden md:block md:text-right md:pr-12 pt-6 order-2 md:order-1">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 04</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">DESCENT & RETURN</span>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">4</div>
+                    <div class="md:pl-12 pt-1 order-3">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-orange-500/20 text-orange-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Dinner Included</span>
+                            <h3 class="text-xl font-bold text-white">Kedarnath Darshan - Guptkashi</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-person-hiking mr-1"></i> 23 Km Descent Trek</p>
+                            <p class="text-sm text-gray-400">Attend early morning Abhishek inside the Garbhagriha at 4:45 AM. Touch the timeless holy idol. Trek back down to Sonprayag. Drive back to Guptkashi for dynamic comfort recovery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="md:text-right md:pr-12 pt-1 order-2 md:order-1">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-orange-500/20 text-orange-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Breakfast &amp; Dinner</span>
+                            <h3 class="text-xl font-bold text-white">Guptkashi - Tungnath - Chopta</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-mountain mr-1"></i> 3 Km Trek to Highest Temple</p>
+                            <p class="text-sm text-gray-400">Ascend to Tungnath Temple (3,680m above sea level). Hike 1 km further to the breathtaking alpine expanse of Chandrashila Peak. Descend down to Chopta camps.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">5</div>
+                    <div class="hidden md:block md:pl-12 pt-6 order-3">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 05</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">HIGHEST SHIVA SHRINE</span>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="hidden md:block md:text-right md:pr-12 pt-6 order-2 md:order-1">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 06</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">BADRINATH REALM</span>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">6</div>
+                    <div class="md:pl-12 pt-1 order-3">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-orange-500/20 text-orange-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Breakfast &amp; Dinner</span>
+                            <h3 class="text-xl font-bold text-white">Chopta - Badrinath Darshan &amp; Sightseeing</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-road mr-1"></i> 177 Kms Travel / Local exploration</p>
+                            <p class="text-sm text-gray-400">Proceed for Badrinath temple prayers. Discover legendary sites: Mana Village (India's first village), Vyas Gufa, Ganesh Gufa, and the pristine confluences. Stay at Pipalkoti/Badrinath hotel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="md:text-right md:pr-12 pt-1 order-2 md:order-1">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-orange-500/20 text-orange-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Breakfast &amp; Dinner</span>
+                            <h3 class="text-xl font-bold text-white">Badrinath/Pipalkoti to Rishikesh</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-road mr-1"></i> 286 Kms | 7 - 8 Hrs Route</p>
+                            <p class="text-sm text-gray-400">Drive via Rudraprayag and Karnaprayag confluences. Follow the merging lines of Alaknanda &amp; Mandakini. Reach Rishikesh adventure city for check-in &amp; stay.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">7</div>
+                    <div class="hidden md:block md:pl-12 pt-6 order-3">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 07</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">YOGA CAPITAL CAPITAL TRANSIT</span>
+                    </div>
+                </div>
+
+                <!-- Day 8 -->
+                <div class="itinerary-node relative grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="hidden md:block md:text-right md:pr-12 pt-6 order-2 md:order-1">
+                        <span class="font-spiritual text-6xl font-black text-white/5 block select-none">DAY 08</span>
+                        <span class="text-sm text-gray-500 font-semibold tracking-widest block mt-1">JOURNEY COMPLETION</span>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-orange-600 border-4 border-[#070a10] transform -translate-x-1/2 flex items-center justify-center text-xs text-white font-bold order-1">8</div>
+                    <div class="md:pl-12 pt-1 order-3">
+                        <div class="glassmism p-6 rounded-2xl border-l-4 border-orange-500 glow-orange transition-all">
+                            <span class="inline-block bg-amber-500/20 text-amber-400 font-bold text-xs px-2.5 py-1 rounded mb-2"><i class="fa-solid fa-utensils mr-1"></i> Breakfast Included</span>
+                            <h3 class="text-xl font-bold text-white">Rishikesh Exploration - Delhi Drop</h3>
+                            <p class="text-xs text-amber-400 mt-1 mb-3"><i class="fa-solid fa-train-subway mr-1"></i> 239 Kms | Terminal Transit</p>
+                            <p class="text-sm text-gray-400">Explore the famous Ram Jhula, Laxman Jhula suspension bridges, and Triveni Ghat. Depart towards Delhi in the afternoon for drop-off at Delhi Railway Station.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Accommodation Showcase -->
+    <section id="hotels" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 space-y-3">
+            <span class="text-orange-500 font-bold uppercase tracking-widest text-xs">Premium Hospitality</span>
+            <h2 class="font-spiritual text-4xl font-bold text-white">3★ Deluxe Categorized Stays</h2>
+            <div class="w-20 h-1 bg-orange-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Hotel 1 -->
+            <div class="glassmism rounded-2xl overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <div class="absolute top-3 right-3 bg-green-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10">MAP Plan</div>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Haridwar Stay">
+                </div>
+                <div class="p-6 space-y-2">
+                    <span class="text-orange-400 font-bold text-xs uppercase tracking-wider">Haridwar (1 Night)</span>
+                    <h4 class="text-white text-lg font-bold">Hotel Great Ananda / River Dale</h4>
+                    <p class="text-xs text-gray-400">Premium modern room amenities close to holy confluences with fine mountain views.</p>
+                </div>
+            </div>
+            <!-- Hotel 2 -->
+            <div class="glassmism rounded-2xl overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <div class="absolute top-3 right-3 bg-green-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10">MAP Plan</div>
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Guptkashi Stay">
+                </div>
+                <div class="p-6 space-y-2">
+                    <span class="text-orange-400 font-bold text-xs uppercase tracking-wider">Guptkashi (2 Nights)</span>
+                    <h4 class="text-white text-lg font-bold">Hotel Rudra / Chaukhamba</h4>
+                    <p class="text-xs text-gray-400">Stunning alpine mountain facing luxury options offering authentic localized organic food options.</p>
+                </div>
+            </div>
+            <!-- Hotel 3 -->
+            <div class="glassmism rounded-2xl overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <div class="absolute top-3 right-3 bg-yellow-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10">EP Plan</div>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Kedarnath Stay">
+                </div>
+                <div class="p-6 space-y-2">
+                    <span class="text-orange-400 font-bold text-xs uppercase tracking-wider">Kedarnath Base (1 Night)</span>
+                    <h4 class="text-white text-lg font-bold">GMVN Camps &amp; Alpine Lodges</h4>
+                    <p class="text-xs text-gray-400">Strategically located shared lodging facilities right next to the high cosmic temple zone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inclusions & Exclusions Dynamic Accordion Side split -->
+    <section id="inclusions" class="py-24 bg-[#070a10] border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Inclusions Block -->
+            <div class="space-y-6 fade-in-left">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="font-spiritual text-2xl font-bold text-white">What's Covered In Package</h3>
+                </div>
+                <div class="glassmism rounded-2xl p-6 divide-y divide-white/5 space-y-4">
+                    <div class="flex items-start gap-3 pt-3">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">Premium accommodation on Triple / Quad sharing configurations across state 3★ luxury assets.</p>
+                    </div>
+                    <div class="flex items-start gap-3 pt-4">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">MAPI Meal Frameworks: Pure vegetarian breakfast and dinner layouts customized inside safe hotels.</p>
+                    </div>
+                    <div class="flex items-start gap-3 pt-4">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">Dedicated 12 Seater luxury Tempo Traveler transit operations (A/C switches off efficiently over hill climbing segments).</p>
+                    </div>
+                    <div class="flex items-start gap-3 pt-4">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">All driver allowance modules, toll taxes, state tourist permits, and heavy commercial parking fees included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exclusions Block -->
+            <div class="space-y-6 fade-in-right">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <h3 class="font-spiritual text-2xl font-bold text-white">Excluded Clear Metrics</h3>
+                </div>
+                <div class="glassmism rounded-2xl p-6 divide-y divide-white/5 space-y-4">
+                    <div class="flex items-start gap-3 pt-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">Personal heating system configurations or electronic room heaters inside cold mountain stays.</p>
+                    </div>
+                    <div class="flex items-start gap-3 pt-4">
+                        <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">Registration entries, guide fees, or individual biometric tracking passes.</p>
+                    </div>
+                    <div class="flex items-start gap-3 pt-4">
+                        <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">Kedarnath base transport elements like Doli, Pony hires, or active Helicopter line transfers.</p>
+                    </div>
+                    <div class="flex items-start gap-3 pt-4">
+                        <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm"></i>
+                        <p class="text-sm text-gray-300">Unforeseen blocks arising from weather landslide events, political disruptions (To be cleared at actuals on-ground).</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Trust & Social Proof Stats Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto text-center border-b border-white/5">
+        <h3 class="font-spiritual text-xl font-bold text-amber-500 uppercase tracking-widest mb-12">The Legend Validation Dashboard</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="glassmism p-6 rounded-2xl">
+                <span class="text-4xl font-bold font-spiritual text-white block"><span class="counter-val" data-target="5">0</span>Lakh+</span>
+                <span class="text-xs text-gray-400 tracking-wider uppercase mt-2 block">Satisfied Travelers</span>
+            </div>
+            <div class="glassmism p-6 rounded-2xl">
+                <span class="text-4xl font-bold font-spiritual text-white block"><span class="counter-val" data-target="15">0</span>+</span>
+                <span class="text-xs text-gray-400 tracking-wider uppercase mt-2 block">Indian States Covered</span>
+            </div>
+            <div class="glassmism p-6 rounded-2xl">
+                <span class="text-4xl font-bold font-spiritual text-white block">4.9<i class="fa-solid fa-star text-amber-400 text-2xl ml-1"></i></span>
+                <span class="text-xs text-gray-400 tracking-wider uppercase mt-2 block">Google User Rating</span>
+            </div>
+            <div class="glassmism p-6 rounded-2xl">
+                <span class="text-4xl font-bold font-spiritual text-white block">100%</span>
+                <span class="text-xs text-gray-400 tracking-wider uppercase mt-2 block">Verified Safety Record</span>
+            </div>
+        </div>
+        <div class="mt-8 text-center">
+            <a href="https://www.youtube.com/channel/Ucgklpnnmznefxjw-Wf1gshq/Videos" target="_blank" class="inline-flex items-center gap-2 text-sm text-red-400 bg-red-500/10 px-4 py-2 rounded-full border border-red-500/20 hover:bg-red-500/20 transition-all">
+                <i class="fa-brands fa-youtube text-base"></i> View Real Video Reviews On YouTube Channel
+            </a>
+        </div>
+    </section>
+
+    <!-- Payment & Checkout Card Modules -->
+    <section id="payment" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-12 space-y-2">
+            <h2 class="font-spiritual text-4xl font-bold text-white">Secure Gateway Integration</h2>
+            <p class="text-xs text-gray-400">30% advance token value secures all premium 2026 mountain reservations instantly.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Left Side: Interactive Bank Tab Selector -->
+            <div class="md:col-span-7 bg-[#121826] border border-white/5 rounded-3xl p-6 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs text-orange-400 font-bold uppercase tracking-wider block mb-4">Select Settlement Line</span>
+                    
+                    <!-- Tab Buttons -->
+                    <div class="flex space-x-2 border-b border-white/10 pb-4 mb-6">
+                        <button onclick="switchBank('icici')" id="btn-icici" class="bank-tab-btn active bg-orange-600 text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wide transition-all">ICICI Current</button>
+                        <button onclick="switchBank('yes')" id="btn-yes" class="bank-tab-btn bg-white/5 text-gray-400 hover:bg-white/10 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wide transition-all">Yes Bank Settlement</button>
+                    </div>
+
+                    <!-- Dynamic Card Content Area -->
+                    <div id="bank-content" class="space-y-4">
+                        <!-- Defaulting to ICICI Core info -->
+                        <div>
+                            <label class="text-[10px] uppercase text-gray-500 block">Beneficiary Entity</label>
+                            <span class="text-base font-bold text-white block">Legend India Holidays</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[10px] uppercase text-gray-500 block">Account Variable</label>
+                                <span class="text-sm font-semibold text-white tracking-wide block">755605000731</span>
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase text-gray-500 block">IFSC Identification</label>
+                                <span class="text-sm font-semibold text-amber-400 block tracking-wider">ICIC0007556</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-[10px] uppercase text-gray-500 block">Remittance Office Node</label>
+                            <span class="text-xs text-gray-400 block">Janakpuri District Center, Upper Ground Floor, New Delhi - 110058</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/5 text-[11px] text-gray-500">
+                    <i class="fa-solid fa-shield-halved text-emerald-500 mr-1"></i> RTGS / NEFT / IMPS network channels supported reliably.
+                </div>
+            </div>
+
+            <!-- Right Side: Interactive Scan App simulation -->
+            <div class="md:col-span-5 bg-gradient-to-b from-[#161f32] to-[#0d1322] border border-white/10 rounded-3xl p-6 text-center flex flex-col justify-center items-center relative overflow-hidden group">
+                <div class="w-44 h-44 bg-white p-3 rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                    <!-- High Fidelity Mock Interactive Scan Code Area using public placeholder graphics -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.legendindiaholidays.com" class="w-full h-full object-contain" alt="Payment QR Code">
+                </div>
+                <p class="text-xs font-bold text-white mt-4"><i class="fa-solid fa-qrcode mr-1 text-orange-400"></i> Scan to Initiate Booking</p>
+                <p class="text-[10px] text-gray-400 max-w-[200px] mt-1 mx-auto">Supports structural unified apps: Google Pay, PhonePe, Paytm, BHIM.</p>
+                
+                <div class="flex justify-center items-center gap-3 mt-4 text-gray-500 text-sm">
+                    <i class="fa-brands fa-google-pay hover:text-white transition-colors"></i>
+                    <i class="fa-solid fa-credit-card hover:text-white transition-colors"></i>
+                    <i class="fa-solid fa-money-check-dollar hover:text-white transition-colors"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Area & Map pins info layout -->
+    <footer class="bg-[#05070b] border-t border-white/5 pt-16 pb-8 px-6 text-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/5">
+            
+            <div class="md:col-span-5 space-y-4">
+                <span class="font-spiritual text-2xl font-black text-white tracking-widest block">LEGEND INDIA HOLIDAYS</span>
+                <p class="text-gray-400 text-xs leading-relaxed max-w-sm">
+                    A unit of Legend India Holidays Group. Crafted professionally to fulfill high spiritual mountain logistics with reliable precision records across Northern Frontier zones.
+                </p>
+                <div class="text-xs text-gray-500">
+                    <p><i class="fa-solid fa-globe mr-2 text-orange-500"></i><a href="https://www.legendindiaholidays.com" target="_blank" class="hover:underline">www.legendindiaholidays.com</a></p>
+                    <p class="mt-1"><i class="fa-solid fa-envelope mr-2 text-orange-500"></i>support@legendindiaholidays.com</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-4 space-y-3">
+                <h4 class="text-xs uppercase font-bold text-white tracking-widest">Physical Head Office</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    B1/514, 1st Floor, Janakpuri District Center,<br>
+                    New Delhi, India - 110058
+                </p>
+                <p class="text-xs text-amber-400 font-semibold pt-1">
+                    <i class="fa-solid fa-phone mr-1"></i> Helpline: +91 9175550942
+                </p>
+            </div>
+
+            <div class="md:col-span-3 space-y-3">
+                <h4 class="text-xs uppercase font-bold text-white tracking-widest">Regional Cash Pickups</h4>
+                <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-bold tracking-wide">
+                    <span class="bg-white/5 text-gray-300 px-2.5 py-1 rounded">Delhi</span>
+                    <span class="bg-white/5 text-gray-300 px-2.5 py-1 rounded">Mumbai</span>
+                    <span class="bg-white/5 text-gray-300 px-2.5 py-1 rounded">Navi Mumbai</span>
+                    <span class="bg-white/5 text-gray-300 px-2.5 py-1 rounded">Rajkot</span>
+                    <span class="bg-white/5 text-gray-300 px-2.5 py-1 rounded">Ahmedabad</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+            <p>&copy; 2026 Legend India Holidays Group. All Luxury Mountain Travel Logistics Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#overview" class="hover:underline">Terms of Service</a>
+                <a href="#payment" class="hover:underline">Cancellation Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Functionality Engine -->
+    <script>
+        // Initialize GSAP ScrollTrigger Configurations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Content Entry Animations
+        window.addEventListener('DOMContentLoaded', () => {
+            const tl = gsap.timeline();
+            tl.from('.hero-title', { duration: 1.2, y: 50, opacity: 0, ease: 'power4.out' })
+              .from('.hero-subtitle', { duration: 0.8, y: 30, opacity: 0, ease: 'power3.out' }, '-=0.6')
+              .from('.hero-badges div', { duration: 0.6, scale: 0.8, opacity: 0, stagger: 0.1, ease: 'back.out(1.7)' }, '-=0.4');
+        });
+
+        // Numerical Increments Counter Engine triggered on viewport intersection
+        const counters = document.querySelectorAll('.counter-val');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            gsap.fromTo(counter, { textContent: 0 }, {
+                textContent: target,
+                duration: 2.5,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: counter,
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                snap: { textContent: 1 },
+                stagger: 1
+            });
+        });
+
+        // Content Fade-In Layout Timelines matching scroll speed
+        gsap.utils.toArray('.fade-in-left').forEach(element => {
+            gsap.from(element, {
+                x: -60,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        gsap.utils.toArray('.fade-in-right').forEach(element => {
+            gsap.from(element, {
+                x: 60,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        // Continuous Timeline Stagger Fade In Node logic
+        gsap.utils.toArray('.itinerary-node').forEach(node => {
+            gsap.from(node, {
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                scrollTrigger: {
+                    trigger: node,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        // Interactive Banking Data State Engine
+        const bankData = {
+            icici: {
+                name: "Legend India Holidays",
+                acc: "755605000731",
+                ifsc: "ICIC0007556",
+                addr: "Janakpuri District Center, Upper Ground Floor, New Delhi - 110058"
+            },
+            yes: {
+                name: "Legend India Holidays Reena Holidays",
+                acc: "016563300000321",
+                ifsc: "YESB0000165",
+                addr: "Yes Bank Ltd - Ground Floor, G-09 to G-12, Janakpuri New Delhi - 110058"
+            }
+        };
+
+        function switchBank(bankKey) {
+            // Animate transition element using simple opacity drop out
+            const area = document.getElementById('bank-content');
+            gsap.to(area, { opacity: 0, duration: 0.2, onComplete: () => {
+                const data = bankData[bankKey];
+                area.innerHTML = `
+                    <div>
+                        <label class="text-[10px] uppercase text-gray-500 block">Beneficiary Entity</label>
+                        <span class="text-base font-bold text-white block">${data.name}</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-[10px] uppercase text-gray-500 block">Account Variable</label>
+                            <span class="text-sm font-semibold text-white tracking-wide block">${data.acc}</span>
+                        </div>
+                        <div>
+                            <label class="text-[10px] uppercase text-gray-500 block">IFSC Identification</label>
+                            <span class="text-sm font-semibold text-amber-400 block tracking-wider">${data.ifsc}</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase text-gray-500 block">Remittance Office Node</label>
+                        <span class="text-xs text-gray-400 block">${data.addr}</span>
+                    </div>
+                `;
+                gsap.to(area, { opacity: 1, duration: 0.3 });
+            }});
+
+            // Toggle active tracking classes on tab selectors
+            document.querySelectorAll('.bank-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-orange-600', 'text-white');
+                btn.classList.add('bg-white/5', 'text-gray-400');
+            });
+            const selectedBtn = document.getElementById(`btn-${bankKey}`);
+            selectedBtn.classList.remove('bg-white/5', 'text-gray-400');
+            selectedBtn.classList.add('bg-orange-600', 'text-white');
+        }
+    </script>
+</body>
+</html>
